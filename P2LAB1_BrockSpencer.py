@@ -1,10 +1,17 @@
 milage = float (input())
 gascost = float (input())
 
-gallons = milage/20
 
-miles20= 20
-miles75= 75
-miles500= 500
 
-print((miles20/milage)* gascost, (miles75/milage)* gascost, (miles500/milage)* gascost)
+miles20 = 20
+miles75 = 75
+miles500 = 500
+
+
+
+
+gascost20 = (miles20/milage)* gascost
+gascost75 = (miles75/milage)* gascost
+gascost500 = (miles500/milage)* gascost
+
+print(f'{gascost20:.2f} {gascost75:.2f} {gascost500:.2f}')
