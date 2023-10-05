@@ -1,20 +1,19 @@
-nums = 4
-product = 1
-average = 0
-lstofnums = []
+#spencer Brock
+#10/5/2023
+#formatting float
 
-for i in range(nums):
-    i = float(input())
-    lstofnums.append(i)
+#get float input from user
+num1 = float(input("Enter a number: "))
+num2 = float(input("Enter a number: "))
+num3 = float(input("Enter a number: "))
+num4 = float(input("Enter a number: "))
 
-for i in lstofnums:
+product = num1 * num2 * num3 * num4
+average = (num1 + num2 + num3 + num4)/4
 
-    product = product * i
+#display values with f-string
+#Display product and avg with 0 decimal places
+print(f"{product:.0f} {average:.0f}")
 
-for i in lstofnums:
-
-    average = average + i
-
-average = average/len(lstofnums)
-print(f'{product:.0f} {average:.0f}')
-print(f'{product:.3f} {average:.3f}')
+#Display the product and avg with 3 decimal places
+print(f"{product:.3f} {average:.3f}")
